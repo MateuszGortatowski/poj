@@ -1,7 +1,10 @@
 public class Kolo4 {
 
+    private static         
+ Rysowalny;
+
     @SuppressWarnings("unused")
-    public static <Rysowalny> void main(String[] args) {
+    public <Rysowalny> String main(String[] args) {
         // TODO Nie zmieniając main spraw aby program działał
         // TODO Stwórz klasy Buzka, Usmiech
         // TODO Stwórz interfejsy Ryswalny, Skalowalny, PrzedstawiaEmocje
@@ -11,37 +14,53 @@ public class Kolo4 {
         // TODO staraj się ogólną funkcjonalność umieścić jak najwyżej w drzewie
         // dziedziczenia
 
-        class Usmiech
-        class Buzka
-
-
+        class Usmiech{}
+        class Buzka{
+            public Buzka(double v) {
+                
+            }
+        }
+        class Skalowalny{
+            public void draw() {
+            System.out.println(toString());
+        }
+        }
+        class PrzedstawiaEmocje{}
 
         Usmiech u1 = new Usmiech();
         Buzka u2 = new Buzka('(');
 
-        Buzka t1 = new Usmiech();
-        PrzedstawiaEmocje t2 = new Buzka('(');
-        Rysowalny t3 = new Buzka('(');
-        Skalowalny t4 = new Usmiech();
+        Buzka t1 = new Buzka();
+        PrzedstawiaEmocje t2 = new PrzedstawiaEmocje('(');
+        Rysowalny t3 = (Rysowalny) new Buzka('(');
+        Skalowalny t4 = new Skalowalny();
 
-        Rysowalny u3 = new Usmiech();
+        Rysowalny u3 = (Rysowalny) new Usmiech();
         Rysowalny u4 = (Rysowalny) new Skalowalny() {
 
             @Override
-            public void draw() {
+            public void draw(){
+                Skalowalny
+                super.draw();
+                public void draw{}
+                PrzedstawiaEmocje
+                super.draw();
+            }
+
+        }
+
+        public void draw() {
                 System.out.println(toString());
             }
 
-            @Override
-            public void draw(int times) {
+        public void draw(int times) {
                 System.out.print(toString());
                 if (times > 1)
                     System.out.print(")".repeat(times - 1));
                 System.out.println();
             }
 
-            @Override
-            public String toString() {
+        public String toString() {
                 return ":-)";
             }
         };
@@ -50,7 +69,12 @@ public class Kolo4 {
         System.out.println("Wydrukuj :-)");
         u4.draw(); // drukuje :-)
         System.out.println("Wydrukuj :-)))");
-        ((Skalowalny) u4).draw(3); // drukuje :-)))
+        ((Skalowalny) u4)
+
+    void draw(3) // drukuje :-)))
+    {
+        
+    }
         System.out.println("Wydrukuj :-(");
         u2.draw(); // drukuje :-(
         System.out.println("Wydrukuj :-)))");
@@ -58,18 +82,30 @@ public class Kolo4 {
         System.out.println("Wydrukuj :-(");
         ((Rysowalny) ((PrzedstawiaEmocje) u2)).draw(); // drukuje :-(
         System.out.println("Wydrukuj :-)");
-        ((Rysowalny) ((PrzedstawiaEmocje) ((Buzka) u1))).draw(); // drukuje :-)
+        ((Rysowalny) ((PrzedstawiaEmocje) ((Buzka) u1))).
 
-        interface Rysowalny extends PrzedstawiaEmocje
+    draw() // drukuje :-)
+    {
+    }
 
-        if (("" + u1).equals(":-)"))
+    interface Rysowalny extends PrzedstawiaEmocje{
+
+        if (("" + u1).
+
+        void equals(":-)"))
             System.out.println("OK 1");
-        if (("" + u2).equals(":-("))
+        if (("" + u2).
+
+        void equals(":-("))
             System.out.println("OK 2");
 
-        if (u1.toString().equals(u4.toString()))
+        if (u1.toString().
+
+        void equals(u4.toString()))
             System.out.println("OK 3");
-        if (u1.toString().equals(":-)"))
+        if (u1.toString().
+
+        void equals(":-)"))
             System.out.println("OK 4");
         if (u5.toString().equals(":-)"))
             System.out.println("OK 5");
@@ -88,7 +124,7 @@ public class Kolo4 {
         if (u1.czySieUsmiecha())
             System.out.println("OK 10");
 
-        if (u1.equals(u3))
+        if (u1.equals(u3));
             System.out.println("OK 11");
         if (u2.equals(u5))
             System.out.println("OK 12");
