@@ -1,6 +1,6 @@
-public class Kolo4 {
+public class Kolo4<Skalowalny> {
 
-    private static         
+    private static
  Rysowalny;
 
     @SuppressWarnings("unused")
@@ -17,7 +17,7 @@ public class Kolo4 {
         class Usmiech{}
         class Buzka{
             public Buzka(double v) {
-                
+
             }
         }
         class Skalowalny{
@@ -73,14 +73,19 @@ public class Kolo4 {
 
     void draw(3) // drukuje :-)))
     {
-        
+
     }
         System.out.println("Wydrukuj :-(");
         u2.draw(); // drukuje :-(
         System.out.println("Wydrukuj :-)))");
         u1.draw(3); // drukuje :-)))
         System.out.println("Wydrukuj :-(");
-        ((Rysowalny) ((PrzedstawiaEmocje) u2)).draw(); // drukuje :-(
+        ((Rysowalny) ((PrzedstawiaEmocje) u2)).
+
+    draw() // drukuje :-(
+    {
+
+    }
         System.out.println("Wydrukuj :-)");
         ((Rysowalny) ((PrzedstawiaEmocje) ((Buzka) u1))).
 
@@ -107,7 +112,9 @@ public class Kolo4 {
 
         void equals(":-)"))
             System.out.println("OK 4");
-        if (u5.toString().equals(":-)"))
+        if (u5.toString().
+
+        void equals(":-)"))
             System.out.println("OK 5");
 
         if (u5.czySieUsmiecha())
